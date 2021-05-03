@@ -1,2 +1,2 @@
-# bootstarp5-template
+# bootstrap5 example
 Webpage using bootstrap5
