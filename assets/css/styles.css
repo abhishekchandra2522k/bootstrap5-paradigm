@@ -1,6 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: orangered;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
 .logo{
-    width: 350px;
-    height: 80px;
+    width: 320px;
+    height: 75px;
+    pointer-events: none;
 }
 
 marquee{
@@ -10,7 +36,8 @@ marquee{
     white-space: wrap;
     pointer-events: none;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .charity{
@@ -42,8 +69,9 @@ marquee{
 
 .nav-link{
     text-transform: uppercase;
-    padding: 10px;
-    font-weight: bold;
+    padding: 5px;
+    font-size: 15px;
+    font-style: 'Poppins', sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link{
