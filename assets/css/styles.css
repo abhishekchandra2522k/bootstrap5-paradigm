@@ -1,5 +1,5 @@
 .logo{
-    width: 250px;
+    width: 350px;
     height: 80px;
 }
 
@@ -7,33 +7,53 @@ marquee{
     margin-bottom: -23px;
     text-align: center;
     padding-top: 5px;
+    white-space: wrap;
+    pointer-events: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
 .charity{
     color: rgba(0,0,0,.55);
     border: 1px solid pink;
     background-color: pink;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
 }
 
-/* .charity:hover span{
+.charity:hover span{
     display: none;
 }
 
 .charity:hover{
-    background-color: pink;
+    background-color: orange;
     color: rgba(0,0,0,.55);
-    border: 1px solid pink;
-    transition: .5s;
+    border: 1px solid orange;
+    transition: .5s ease-in;
 }
 
 .charity:hover::before{
-    content: "Donate";
-} */
+    content: " Donate";
+    padding-right: 4px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 10px;
+}
 
 @media screen and (max-width: 560px){
     .logo{
-        width: 200px;
-        height: 80px;
+        width: 166px;
+        height: 40px;
     }
     nav{
         width: 100%;
