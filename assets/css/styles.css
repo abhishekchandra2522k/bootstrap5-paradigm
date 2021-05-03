@@ -1,0 +1,41 @@
+.logo{
+    width: 250px;
+    height: 80px;
+}
+
+marquee{
+    margin-bottom: -23px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.charity{
+    color: rgba(0,0,0,.55);
+    border: 1px solid pink;
+    background-color: pink;
+}
+
+/* .charity:hover span{
+    display: none;
+}
+
+.charity:hover{
+    background-color: pink;
+    color: rgba(0,0,0,.55);
+    border: 1px solid pink;
+    transition: .5s;
+}
+
+.charity:hover::before{
+    content: "Donate";
+} */
+
+@media screen and (max-width: 560px){
+    .logo{
+        width: 200px;
+        height: 80px;
+    }
+    nav{
+        width: 100%;
+    }
+}
