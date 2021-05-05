@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: 10px;
     margin-top: -12px;
     box-shadow: 2px 2px 12px 2px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    color: white;
+    color: black;
     background-color: rgb(255, 213, 220);
     border: none;
     font-weight: bold;
@@ -179,7 +179,7 @@ marquee{
 }
 
 .charity{
-    color: rgba(0,0,0,.55);
+    color: rgba(0, 0, 0, 0.719);
     border: 1px solid pink;
     background-color: pink;
     text-transform: uppercase;
@@ -221,6 +221,39 @@ marquee{
 .carousel-item img{
     width: 100%;
     height: 90vh;
+}
+
+.carousel-caption{
+    top: 13rem;
+    /* left: -22rem;    */
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel-caption span{
+    font-size: 3rem;
+    color: lightgreen;
+}
+
+/* Donation */
+.donation{
+    position: relative;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    height: 20vh;
+    display: flex;
+    background-color: rgb(66, 208, 255);
+    width: 100%;
+}
+
+.donate{
+    padding-top: 1.2rem;
+    font-weight: 600;
+}
+
+.donate button{
+    padding: 10px 20px;
 }
 
 /* About */
@@ -344,6 +377,106 @@ marquee{
     background-repeat: no-repeat;
 }
 
+/* Testimonials */
+.test{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2196f3;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-container h2{
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.swiper-slide {
+   background-position: center;
+   background-size: cover;
+   width: 320px;
+   /* height: 300px; */
+   box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+   filter: blur(2px);
+   background: #d1ebff;
+    border-radius: 10px;
+}
+
+.swiper-slide-active{
+    filter: blur(0px);
+    background: #fff;
+
+}
+
+.testimonialBox{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #999;
+}
+
+.testimonialBox .quote{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity: 0.2;
+}
+
+.testimonialBox .details{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonialBox .details .imgBox{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.testimonialBox .details .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonialBox .details h3{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2196f3;
+    line-height: 1.1em;
+}
+
+.testimonialBox .details h3 span{
+    font-size: 12px;
+    color: #666;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+}
+/* Footer */
+
 .footer{
     background-color: #24262b;
     padding: 70px 0;
@@ -365,6 +498,7 @@ ul{
     font-weight: 500;
     position: relative;
 }
+
 .footer-col h4::before{
     content: '';
     position: absolute;
