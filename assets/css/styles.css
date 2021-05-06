@@ -8,7 +8,8 @@
 
 /* BODY  */
 html{
-    width: 100% ;
+    width: 100%;
+    height: 100%;
 }
 
 body{
@@ -256,6 +257,128 @@ marquee{
     padding: 10px 20px;
 }
 
+/* Cards */
+.card h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: -2rem;
+}
+
+.card {
+    padding: 100px;
+    background: rgb(255, 119, 119);
+    border: none;
+    border-radius: 0;
+    background: linear-gradient(270deg, #ffe0b2, #fac6e5);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: .5s ease-in-out;
+}
+
+.cards:hover{
+    transform: translateY(-20px);
+    border-radius: 10px;
+}
+
+.cards::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0,176,155,.5),#ffb0e1);
+    z-index: 2;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.cards:hover::before{
+    opacity: 1;
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.cards .info{
+    position: relative;
+    z-index: 3;
+    font-weight: bold;
+    color: rgb(255, 255, 102);
+    opacity: 1;
+    transform: translateY(10px);
+    transition: .5s all;
+}
+
+.cards:hover .info{
+    opacity: 1;
+    /* transform: translateY(0px); */
+    /* color: black; */
+}
+
+.cards .info h1{
+    margin: 0;
+}
+
+.cards .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.cards .info a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
 /* About */
 .main_heading{
     background-color: rgb(255, 241, 243);
@@ -410,13 +533,16 @@ marquee{
    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
    filter: blur(2px);
    background: #d1ebff;
-    border-radius: 10px;
+   border-radius: 10px;
 }
 
 .swiper-slide-active{
     filter: blur(0px);
     background: #fff;
+}
 
+.content{
+    color: #555a66;
 }
 
 .testimonialBox{
@@ -425,6 +551,7 @@ marquee{
     padding: 40px;
     padding-top: 90px;
     color: #999;
+    min-height: 500px;
 }
 
 .testimonialBox .quote{
@@ -559,11 +686,15 @@ ul{
     background-color: #fff;
 }
 
+.footer .container-fluid{
+    padding-left: 5rem;
+}
+
 /* Media Queries - Responsive*/
 
 @media screen and (max-width: 560px){
     .logo{
-        width: 166px;
+        width: 200px;
         height: 40px;
     }
     nav{
@@ -592,6 +723,47 @@ ul{
         padding: 10px;
         text-align: center;
     }
+    .donate{
+        margin-top: 14px;
+    }
+    .donation{
+        padding-top: 1.4rem;
+    }
+    .donation h2{
+        font-size: calc(1rem + .9vw);
+    }
+    .donation p{
+        padding: 0;
+        font-size: 10px;
+        text-align: left;
+    }
+    .donation button{
+        padding: 5px;
+        margin-top: 1rem;
+    }
+    .carousel-caption{
+        top: 1rem;
+        /* left: -22rem;    */
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .carousel-caption span{
+        font-size: 2rem;
+        color: lightgreen;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer .container-fluid{
+        padding-left: 1rem;
+    }
 }
 
 @media (max-width: 960px){
@@ -601,6 +773,19 @@ ul{
     }
     .l-header{
         display: none;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cards{
+        margin-top: 20px;
+    }
+    .card{
+        padding: 50px;
     }
 }
 
@@ -625,7 +810,7 @@ ul{
 @media (min-width: 992px) {  }
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) {
+@media (min-width: 1441px) {
     .title{
         width: 70%;
         text-align: center;
@@ -635,8 +820,15 @@ ul{
         width: 23%;
         margin-left: 0;
     }
+    .donation .right{
+        width: auto;
+        margin-left: auto;
+    }
     .left{
         width: 33%;
+    }
+    .footer .container-fluid{
+        padding-left: 20rem;
     }
 }
 
