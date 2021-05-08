@@ -808,7 +808,7 @@ ul{
         height: 25vh;
     }
     .carousel-caption{
-        top: 7rem;
+        top: 5rem;
     }
     .wrapper{
         display: flex;
@@ -878,9 +878,6 @@ ul{
         padding: 10px;
         text-align: center;
     }
-    .donate{
-        margin-top: 14px;
-    }
     .donation{
         padding-top: 1.4rem;
     }
@@ -897,10 +894,13 @@ ul{
         margin-top: 1rem;
     }
     .carousel-caption{
-        top: 1rem;
+        top: 3rem;
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: bold;
+    }
+    .donation {
+        height: 18vh;
     }
     
     .carousel-caption span{
