@@ -975,7 +975,7 @@ ul{
         font-weight: bold;
     }
     .donation {
-        height: 16vh;
+        height: 15vh;
     }
     
     .carousel-caption span{
@@ -1014,6 +1014,7 @@ ul{
     }
     .inner-container{
         margin-right: 0;
+        padding: 2rem;
     }
     .parallaxOne h1{
         font-size: 4rem;
