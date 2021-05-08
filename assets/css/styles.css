@@ -234,7 +234,7 @@ marquee{
 
 .carousel-caption span{
     font-size: 3rem;
-    color: lightgreen;
+    color: rgb(255, 190, 71);
 }
 
 /* Donation */
@@ -794,12 +794,21 @@ ul{
 }
 
 @media (max-width: 960px){
+    .charity{
+        display: block;
+    }
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
     }
     .l-header{
         display: none;
+    }
+    .donation {
+        height: 25vh;
+    }
+    .carousel-caption{
+        top: 7rem;
     }
     .wrapper{
         display: flex;
@@ -856,9 +865,6 @@ ul{
     .carousel-item img{
         height: 40vh;
     }
-    .carousel-caption{
-        font-size: 10px;
-    }
     .l-header{
         display: none;
     }
@@ -892,7 +898,6 @@ ul{
     }
     .carousel-caption{
         top: 1rem;
-        /* left: -22rem;    */
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: bold;
@@ -900,7 +905,6 @@ ul{
     
     .carousel-caption span{
         font-size: 2rem;
-        color: lightgreen;
     }
 
     .wrapper{
@@ -946,14 +950,7 @@ ul{
 @media (min-width: 576px) { }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .donation {
-        height: 23vh;
-    }
-    .carousel-caption{
-        top: 10rem;
-    }
-}
+
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 1025px) { 
